@@ -31,7 +31,7 @@ def setup_application_list():
 
 
 # Task 1: Refactor calculate_accuracy to use keyword-friendly defaults
-def calculate_accuracy(correct=< your_code >, total=< your_code >):
+def calculate_accuracy(correct=0 , total=0):
     """Calculate the accuracy percentage."""
     if total > 0:
         accuracy = (correct / total) * 100
@@ -56,7 +56,7 @@ def derive_true_label(sample):
 
 
 # Task 2: Rename setup_application to run_classifier_pipeline
-def setup_application(threshold=< your_code >, print_each=< your_code >):
+def setup_application(threshold=2.0, print_each=True):
     """Run the full classifier pipeline and compute accuracy."""
     dataset = setup_application_list()
     correct, wrong, total, y_pred_list = run_prediction_loop(
@@ -69,7 +69,7 @@ def setup_application(threshold=< your_code >, print_each=< your_code >):
 
 
 # Task 3: Refactor run_prediction_loop to combine positional and keyword arguments
-def run_prediction_loop(dataset, threshold=< your_code >, print_each=< your_code >):
+def run_prediction_loop(dataset, threshold=2.0, print_each=True):
     """Run the prediction loop with the chosen threshold."""
     correct = 0
     wrong = 0

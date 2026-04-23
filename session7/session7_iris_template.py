@@ -64,10 +64,10 @@ class ClassifierBase:
         Returns:
             str: self.positive_label if species matches, else self.negative_label.
         """
-        # If sample["species"] == self.positive_label:
-        #     return self.positive_label
-        # Otherwise return self.negative_label
-        pass
+        if sample["species"] == self.positive_label:
+            return self.positive_label
+        else:
+            return self.negative_label
 
     # Task 2: Implement update_result_counts
     def update_result_counts(self, correct, wrong, total, y_pred_list, y_pred, y_true):
