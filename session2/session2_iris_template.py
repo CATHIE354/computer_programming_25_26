@@ -3,7 +3,7 @@ Note: Variable names must match exactly because later sessions import these name
 """
 
 # Task 1: Print Flower Summary
-id = "flower1" 
+id = "flower_1x" 
 
  # Task 2: Change this to "flower_2x"
 print("\n=== Flower Summary ===")
@@ -25,7 +25,7 @@ print("Species:", species)
 
 # Task 4: Compute petal area
 petal_area = petal_length * petal_width
-print("\nPetal Area:", petal_area)  #Uncomment the area
+print("\nPetal Area 2:", petal_area)  #Uncomment the area
 
 threshold = 2.0
 feature_name = "petal_length"
@@ -36,3 +36,15 @@ label_key = "species"
 # Task 5: Comparing with threshold
 is_short_petal = petal_length < threshold
 print(is_short_petal)
+
+petal_length_text=str(petal_length)
+print("petal_length_text:", petal_length_text, "| type:", type(petal_length_text))
+
+threshold_text=str(threshold)
+print("threshold_text:", threshold_text, "| type:", type(threshold_text))
+
+threshold_number= float(threshold)
+print("threshold_number:",threshold_number, "| type: ",type(threshold_number))
+
+petal_area2= float(petal_length_text) * petal_width
+print("Petal Area 2:", petal_area2)
